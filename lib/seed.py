@@ -57,5 +57,15 @@ if __name__ == '__main__':
 
     session.bulk_save_objects(games)
     session.commit()
-    
 
+# OR
+# for item in range(50):
+#     game = Game(
+#          title=fake.name(),
+#         genre=fake.word(),
+#         platform=fake.word(),
+#         price=random.randint(0, 60)
+#     )
+#     session.add(game)
+#     session.commit()
+    
